@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <title>Home page</title>
+    </head>
+
+<body>
+  <div role="navigation">
+  <!--NAVBAR-->
+    <div class="navbar">
+      <img src="./icon.png" alt="icon page">
+    <a href="#">Home</a>
+    <a href="./cities.html">Cities</a>
+    <a href="./learn.html">Learn</a>
+    <a href="./contact.html">Contact</a>
+    
+    </div>
+  </div>
+
+
+  <div role="banner">
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img src="./Images/Transition/bd656836.png" alt="Bolivia cover page" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="./Images/Transition/bolivia-flag-waving-background-vector-600nw-2387941097.jpg" alt="Bolivian flag (red, yellow and green)" style="width:100%">
+  </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="./Images/Transition/la-diablada.jpg" alt="la diablada traditional dancing" style="width:100%">
+  </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="./Images/Transition/lagunaColorada.jpg" alt="laguna colorada" style="width:100%">
+  </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="./Images/Transition/Caporales.jpg" alt="caporales" style="width:100%">
+  </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="./Images/Transition/SalarUyuni.jpg" alt="Salar Uyuni" style="width:100%">
+  </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="./Images/Transition/sample_0.jpg" alt="jungle and montains" style="width:100%">
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+</div>
+<br>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </div>
+
+  <div role="maininfo">
+
+     <!--INTRO-->
+    <div class="container">
+<h1>Introduction</h1>
+<p>
+Welcome to Bolivia, a land of breathtaking contrasts where the snow-capped Andes Mountains dramatically meet the vibrant green expanse of the Amazon rainforest! Prepare for a journey that transcends the ordinary, a tapestry woven from threads of ancient history, captivating culture, and unparalleled natural beauty. Imagine yourself exploring the mystical ruins of Tiwanaku, a testament to a civilization that thrived centuries ago. Picture vibrant markets overflowing with exotic fruits and hand-woven textiles, the air alive with the sounds of traditional Andean music. Envision yourself hiking through cloud forests, where waterfalls cascade down verdant slopes, and the air is filled with the songs of exotic birds. Contemplate the otherworldly beauty of the Salar de Uyuni, the world's largest salt flat, a dazzling expanse of white that stretches as far as the eye can see.
+
+As you venture into the heart of Bolivia, discover the rich cultural heritage of its people, from the colorful traditions of the indigenous communities to the colonial architecture of Sucre and Potosí. Visit the bustling cities, where modern life blends seamlessly with ancient customs, and sample the local cuisine, a delicious fusion of Spanish, African, and indigenous flavors.
+
+Some of the experiences you can look forward to include:
+
+Exploring the Amazon rainforest, home to an incredible array of wildlife and exotic plants
+Hiking to the summit of Sajama, the highest peak in Bolivia, for breathtaking views of the surrounding landscape
+Visiting the famous Lake Titicaca, the highest navigable lake in the world, and learning about the traditional ways of life of the local communities
+Marveling at the stunning scenery of the Death Road, one of the most spectacular roads in the world
+Immersing yourself in the vibrant culture of Bolivia's cities, from the street art of La Paz to the historic centers of Sucre and Potosí
+Whether you seek adventure, cultural immersion, or simply a moment of breathtaking tranquility, Bolivia promises an experience unlike any other. Uncover hidden gems, encounter warm-hearted people, and create memories that will last a lifetime. Start planning your unforgettable Bolivian adventure today!
+</p>
+  </div>
+</div>
+
+
+<div role="footer">
+<div class="footer">
+  <h4>Any further queries please do contact us.</h4>
+    <p>Phone number: +44 7405641296</p>
+  <p>Email address: yegin15298@frisbook.com</p>
+    
+  </div>
+</div>
+        
+  </body>
+</html>

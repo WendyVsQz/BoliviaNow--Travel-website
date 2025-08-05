@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-image: url("../2d-graphic-colorful-wallpaper-with-grainy-gradients.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-size: 200% 102%;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  padding: 5px;
+  height: 50px;
+  margin: 10px;
+}
+
+.navbar img{
+  float: right;
+  right: 20px;
+  width: 7%;
+  margin-top: -20px;
+  position: relative;
+}
+
+/* Navbar links */
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    padding: 1px 8px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+.navbar a:hover {
+  background-color: #3591e0;
+  color: black;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.grid-container {
+  
+  background-color: dodgerblue;
+  padding: 5px;
+  align-content: start;
+}
+
+.grid-container div a {
+  display: flex;
+  height: 100px;
+  grid-template-columns: auto auto auto;
+  background-color: #060606;
+  color:#f9fafa;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 768px) {
+ .navbar img{
+    width: 15%;
+    margin-top: -18px;
+    }
+  }
+
+

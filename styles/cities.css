@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  background-image: url("../2d-graphic-colorful-wallpaper-with-grainy-gradients.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-size: 200% 102%;
+}
+
+h1{
+  font-family:'Times New Roman', Times, serif;
+  margin: 2%;
+  color: #f2f2f2;
+  text-align:center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  padding: 5px;
+  height: 50px;
+  margin: 10px;
+}
+
+.navbar img{
+  float: right;
+  right: 20px;
+  width: 7%;
+  margin-top: -20px;
+  position: relative;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-family: Verdana, sans-serif;
+  text-align:center;
+  padding: 1px 8px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.navbar a:hover {
+  background-color: #3591e0;
+  color: black;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+h1{
+background: #cc3629;
+margin: 1%;
+
+background: linear-gradient(90deg, rgb(175, 35, 22) 0%, rgba(240, 232, 14, 1) 50%, rgb(59, 175, 88) 100%);
+color: #2e2e30;
+}
+#wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to multiple lines */
+  justify-content: space-around; /* Distribute items evenly */
+}
+
+.gallery {
+  background-color: #2e2e30;
+  margin: 0px; /* Increased margin for better spacing */
+  width: 48%; /* Adjust for number of columns */
+  box-sizing: border-box; /* Include padding and border in width */
+  overflow: hidden;
+  border: 8px solid transparent;
+  
+}
+.gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+div.gallery:hover {
+    border-color: #e04816fa; /* Change border color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+div.desc {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    font-size: large;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (max-width: 768px) { /* Adjust breakpoint as needed */
+  .navbar img{
+    width: 15%;
+    margin-top: -18px;
+    }
+  .gallery {
+    flex-direction: row; /* Arrange horizontally on larger screens */
+    width: calc(50% - 20px); /* Adjust width for two columns */
+  }
+
+  .foote {
+    margin-left: 800px;
+  }
+}
+
+@media (min-width: 1200px) { /* Adjust breakpoint as needed */
+  .gallery {
+    width: calc(33.33% - 0px); /* Adjust width for three columns */
+  }
+}

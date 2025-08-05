@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Beni Department: A Tropical Paradise in Northeastern Bolivia</title>
+</head>
+
+  <div role="navigation">
+  <div class="navbar">
+  <img src="../icon.png" alt="icon page">
+    <a href="../index.html">Home</a>
+    <a href="../cities.html">Cities</a>
+    <a href="../learn.html">Learn</a>
+    <a href="../contact.html">Contact</a>
+    </div>
+  </div>
+
+<style>
+
+  body {
+    margin: 0; /* Remove default margin */
+}
+* {
+    box-sizing: border-box;
+}
+
+h1{
+  font-family:'Times New Roman', Times, serif;
+  text-align:center;
+}
+
+.navbar {
+   overflow: hidden;
+  background-color: #333;
+  padding: 5px;
+  height: 50px;
+
+}
+.navbar img{
+  float: right;
+  right: 20px;
+  width: 7%;
+  margin-top: -20px;
+  position: relative;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align:center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 1px 8px;
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+.navbar a:hover {
+  background-color: #3591e0;
+  color: black;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 5px;
+  background-color: #2196F3;
+  padding: 5px;
+}
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+}
+.container > div.header {
+  grid-area: header;
+  text-align: center;
+}
+.container > div.menu {
+  grid-area: menu;
+}
+.container > div.content {
+  grid-area: content;
+}
+.container > div.footer {
+  grid-area: footer;
+}
+
+.content p {
+  text-align: left;
+}
+
+.footer h4, p{
+  margin: auto;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) { /* Adjust breakpoint as needed */
+   .navbar img{
+    width: 15%;
+    margin-top: -18px;
+    }
+   .container {
+    grid-template-areas:
+      "header"
+      "content"
+      "menu"
+      "footer";
+    grid-template-columns: 1fr; /* Stack elements vertically */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 2px; /* Reduce padding on smaller screens */
+  }
+
+  .container > div {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+}
+
+</style>
+</head>
+
+<body>
+  <div role="header">
+  <div class="intro">
+
+  <h1>Beni</h1>
+<p> Beni is a tropical paradise with lush vegetation and a warm climate. Its rivers and wetlands provide a unique ecosystem, making it a great destination for eco-tourism.
+</p>
+  </div>
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/n14d38n65d10/beni-department/" data-label_1="BENI" data-label_2="WEATHER" data-theme="original" >BENI WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+</div>
+
+<div role="info">
+<div class="container">
+  <div class="header"><h2>Overview</h2></div>
+  
+  <div class="menu">
+    <h3>Link recommendations</h3>
+    <ol>
+  <li>
+  <a href="#">https://bolivianembassy.ca/bolivia/el-pais/departamentos/departamento-de-beni/</a><br>
+  </li>
+  <li>
+  <a href="#">https://boliviatravelsite.com/rurrenabaque</a><br>
+  </li>
+  <li>
+  <a href="#">https://www.tasteatlas.com/beni-department</a>
+  </li>
+    </ol>
+    <img src="../Images/Trinidad beni bolivia 🇧🇴.jpeg" alt="Beni trinidad buildings">
+    </div>
+
+  <div class="content">
+<p>
+Location: Situated in northeastern Bolivia, Beni is known for its extensive wetlands and rivers.
+Capital: Trinidad.
+Population: Approximately 445,964 residents.
+Economy:
+Agriculture: Major crops include rice, cassava, and fish farming.
+Tourism: Known for its natural beauty and wildlife.
+Cultural Significance: Rich in folklore and traditional music, Beni celebrates various festivals throughout the year.
+Natural Attractions:
+Madidi National Park: A biodiversity hotspot, home to countless species of plants and animals.
+Beni River: Vital for local transportation and fishing, offering stunning views.
+
+</p>
+    </div>
+  </div>
+</div>
+
+<div role="footer">
+  <div class="footer">
+    <h4>Any further queries please do contact us.</h4>
+    <p>Phone number: +44 7405641296</p>
+    <p>Email address: yegin15298@frisbook.com</p>
+
+  </div>
+  </div>
+
+
+</body>
+</html>
